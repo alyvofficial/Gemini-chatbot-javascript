@@ -1,0 +1,18 @@
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 0.8em;
+  }
+  .container {
+    padding: 1rem;
+  }
+  .input-group {
+    justify-content: space-around;
+  }
+  #prompt-here,
+  #fromPlace,
+  #toPlace,
+  #duration {
+    width: 30%;
+    padding: 0.75rem 1rem;
+  }
+}
