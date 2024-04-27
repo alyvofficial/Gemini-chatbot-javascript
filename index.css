@@ -1,0 +1,203 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+  position: relative;
+
+}
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.container {
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.input-group {
+  width: 100%;
+}
+.chat-box {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  background-color: #f9f9f9;
+}
+.user-msg {
+  text-align: right;
+  color: #ffffff;
+  background-color: rgb(32, 32, 32);
+  border-radius: 20px;
+}
+.bot-msg {
+  text-align: left;
+  background-color: rgb(32, 32, 32);
+  color: #ffffff;
+  border-radius: 20px;
+}
+.input-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+#res {
+  padding: 0;
+}
+#prompt-here,
+#fromPlace,
+#toPlace,
+#duration {
+  width: 15%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  background-color: #f9f9f9;
+  resize: none;
+}
+#button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+#button:hover {
+  background-color: #2980b9;
+}
+.copyIcon {
+    width: 1.2em;
+}
+
+
+
+
+
+/* Custom styles for syntax highlighting */
+.hljs {
+  background-color: rgb(32, 32, 32); /* Black background */
+  color: #ffffff; /* Light text color */
+  padding: 1em; /* Add some padding */
+  border-radius: 8px; /* Rounded corners */
+  overflow-x: auto;
+  font-size: 1.2em; /* Enable horizontal scroll if needed */
+}
+
+/* Optional: Customize the color for different types of code elements */
+.hljs-comment,
+.hljs-quote {
+  color: #79beff; /* Gray for comments and quotes */
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-tag {
+  color: #ffa500; /* Orange for keywords and tags */
+}
+
+.hljs-tag,
+  .hljs-tag .hljs-name,
+  .hljs-tag .hljs-attr,
+  .hljs-tag .hljs-attr-value {
+    color: #ffa500; /* Orange for HTML tags and attributes */
+  }
+
+.hljs-subst,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-strong,
+.hljs-emphasis,
+.hljs-bullet,
+.hljs-number,
+.hljs-regexp,
+.hljs-link {
+  color: #ff0; /* Yellow for variables, numbers, and links */
+}
+
+.hljs-section,
+.hljs-title {
+  color: #00f; /* Blue for sections and titles */
+}
+
+.hljs-symbol,
+.hljs-attribute,
+.hljs-keyword,
+.hljs-literal,
+.hljs-selector-attr,
+.hljs-selector-pseudo {
+  color: rgb(255, 86, 255); /* Purple for symbols and attributes */
+}
+
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #0f0; /* Green for built-in and predefined names */
+}
+
+.hljs-meta,
+.hljs-meta-keyword,
+.hljs-meta-string {
+  color: #fff; /* White for meta information */
+}
+
+.hljs-type,
+.hljs-params,
+.hljs-class .hljs-title {
+  color: #f90; /* Gold for types, parameters, and class titles */
+}
+
+.hljs-function {
+  color: #ff0; /* Yellow for functions */
+}
+
+.hljs-string,
+.hljs-title,
+.hljs-doctag {
+  color: #0f0; /* Green for strings and document tags */
+}
+
+.hljs-selector-id,
+.hljs-selector-class {
+  color: #f0f; /* Purple for selector IDs and classes */
+}
+
+.hljs-emphasis {
+  font-style: italic; /* Italicize emphasized text */
+}
+
+.hljs-strong {
+  font-weight: bold; /* Bolden strong text */
+}
+
+
+#progress {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 70px;
+    width: 70px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  #progress-value {
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    color: #001a2e;
+  }
